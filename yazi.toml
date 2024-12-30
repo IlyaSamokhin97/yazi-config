@@ -1,0 +1,7 @@
+[opener]
+open = [
+    { run = "code %*" }
+]
+edit = [
+    { run = "nvim %*", block = true, orphan = true, for = "windows" }
+]
