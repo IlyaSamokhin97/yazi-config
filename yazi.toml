@@ -34,14 +34,14 @@ edit = [
 	{ run = '${EDITOR:-vi} "$@"', desc = "$EDITOR", block = true, for = "unix" },
 	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
-    { run = "nvim %*", block = true, orphan = true, for = "windows" },
-    { run = '"C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\devenv.exe" %*', desc = "Visual Studio", orphan = true, for = "windows" }
+	{ run = "nvim %*",    block = true, orphan = true,            for = "windows" },
+	{ run = '"C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\devenv.exe" %*', desc = "Visual Studio", orphan = true, for = "windows" }
 ]
 open = [
 	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
 	{ run = 'open "$@"',                    desc = "Open", for = "macos" },
 	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
-    { run = "code %*", for = "windows" }
+	{ run = "code %*", for = "windows" }
 ]
 reveal = [
 	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
