@@ -35,13 +35,12 @@ edit = [
 	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
 	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
 	{ run = "nvim %*",    block = true, orphan = true,            for = "windows" },
-	{ run = '"C:\Program Files\Microsoft Visual Studio\2022\Professional\Common7\IDE\devenv.exe" %*', desc = "Visual Studio", orphan = true, for = "windows" }
 ]
 open = [
-	{ run = 'xdg-open "$1"',                desc = "Open", for = "linux" },
-	{ run = 'open "$@"',                    desc = "Open", for = "macos" },
-	{ run = 'start "" "%1"', orphan = true, desc = "Open", for = "windows" },
-	{ run = "code %*", for = "windows" }
+	{ run = 'xdg-open "$1"',                                                                  desc = "Open",          for = "linux" },
+	{ run = 'open "$@"',                                                                      desc = "Open",          for = "macos" },
+	{ run = 'start "" "%1"',                                                                  desc = "Open",          for = "windows", orphan = true },
+	{ run = '"C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\VSLauncher.exe" %*', desc = "Visual Studio", for = "windows", orphan = true },
 ]
 reveal = [
 	{ run = 'xdg-open "$(dirname "$1")"',           desc = "Reveal", for = "linux" },
@@ -61,7 +60,7 @@ play = [
 
 [open]
 prepend_rules = [
-	{ name = "*.sln", use = "open" },
+	{ name = "*.sln", use = [ "open", "edit" ] },
 ]
 rules = [
 	# Folder
