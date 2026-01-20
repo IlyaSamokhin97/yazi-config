@@ -31,10 +31,10 @@ ueberzug_offset = [ 0, 0, 0, 0 ]
 
 [opener]
 edit = [
-	{ run = '${EDITOR:-vi} "$@"', desc = "$EDITOR", block = true, for = "unix" },
-	{ run = 'code %*',    orphan = true, desc = "code",           for = "windows" },
-	{ run = 'code -w %*', block = true,  desc = "code (block)",   for = "windows" },
-	{ run = "nvim %*",    block = true, orphan = true,            for = "windows" },
+	{ run = '${EDITOR:-vi} "$@"', desc = "$EDITOR",      for = "unix",    block = true },
+	{ run = "hx %*",              desc = "helix",                         block = true },
+	{ run = 'code %*',            desc = "code",         for = "windows", orphan = true },
+	{ run = 'code -w %*',         desc = "code (block)", for = "windows", block = true },
 ]
 open = [
 	{ run = 'xdg-open "$1"',                                                                  desc = "Open",          for = "linux" },
