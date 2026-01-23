@@ -30,7 +30,7 @@ keymap = [
 	{ on = "<PageDown>",   run = "arrow 100%",  desc = "Move cursor down one page" },
 
 	{ on = [ "g", "g" ], run = "arrow top", desc = "Go to top" },
-	{ on = "G",          run = "arrow bot", desc = "Go to bottom" },
+	{ on = [ "g", "e" ], run = "arrow bot", desc = "Go to bottom" },
 
 	# Navigation
 	{ on = "h", run = "leave", desc = "Back to the parent directory" },
@@ -129,6 +129,9 @@ keymap = [
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
 	{ on = [ "g", "f" ],       run = "follow",           desc = "Follow hovered symlink" },
+	{ on = [ "g", "C" ],       run = "cd C:",            desc = "Go C:\\" },
+	{ on = [ "g", "D" ],       run = "cd D:",            desc = "Go D:\\" },
+	{ on = [ "g", "E" ],       run = "cd E:",            desc = "Go E:\\" },
 
 	# Tabs
 	{ on = "t", run = "tab_create --current", desc = "Create a new tab with CWD" },
@@ -172,7 +175,7 @@ keymap = [
 	{ on = "<Down>", run = "arrow next", desc = "Next task" },
 
 	{ on = "<Enter>", run = "inspect", desc = "Inspect the task" },
-	{ on = "x",       run = "cancel",  desc = "Cancel the task" },
+	{ on = "d",       run = "cancel",  desc = "Cancel the task" },
 
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
@@ -369,6 +372,6 @@ keymap = [
 	{ on = "<Down>", run = "arrow next", desc = "Next line" },
 
 	# Filtering
-	{ on = "f", run = "filter", desc = "Filter help items" },
+	{ on = "/", run = "filter", desc = "Filter help items" },
 ]
 
