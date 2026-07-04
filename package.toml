@@ -2,6 +2,6 @@
 deps = []
 
 [[flavor.deps]]
-use = "matt-dong-123/base16"
-rev = "ed79352"
-hash = "94659ef90cd557d05dbda7076fbbb3f4"
+use = "azzamsa/modus"
+rev = "150e2c0"
+hash = "76634cc4de7fd7f94ca12e372b329875"
