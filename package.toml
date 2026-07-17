@@ -3,6 +3,11 @@ use = "boydaihungst/gvfs"
 rev = "c5a0bb9"
 hash = "f48c904cfbe058cfd1cd77928171a1a8"
 
+[[plugin.deps]]
+use = "Tyarel8/goto-drives"
+rev = "ea8de5c"
+hash = "391dceaaa173b6e429ce9be4630959ae"
+
 [[flavor.deps]]
 use = "azzamsa/modus"
 rev = "150e2c0"
