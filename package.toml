@@ -1,9 +1,9 @@
 [[plugin.deps]]
 use = "boydaihungst/gvfs"
-rev = "3abc0a2"
-hash = "eed89e75671723c8f9390a2862af0e4e"
+rev = "c5a0bb9"
+hash = "f48c904cfbe058cfd1cd77928171a1a8"
 
 [[flavor.deps]]
 use = "azzamsa/modus"
 rev = "150e2c0"
-hash = "f3a129c07df999214d70c535c0f6774e"
+hash = "76634cc4de7fd7f94ca12e372b329875"
